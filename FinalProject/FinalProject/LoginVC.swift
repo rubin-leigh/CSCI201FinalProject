@@ -8,9 +8,11 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, UITextFieldDelegate {
     let gradientLayer = CAGradientLayer()
 
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,6 +20,10 @@ class LoginVC: UIViewController {
         self.gradientLayer.setColorUSC()
         
         self.view.layer.insertSublayer(self.gradientLayer, at: 0)
+        
+        self.email.delegate = self
+        self.password.delegate = self
+        self.hideKeyboardWhenBackgroundTapped()
         // Do any additional setup after loading the view.
     }
 
@@ -34,6 +40,11 @@ class LoginVC: UIViewController {
         
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     override func viewWillDisappear(_ animated: Bool) {

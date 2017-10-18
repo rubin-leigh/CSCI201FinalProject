@@ -325,6 +325,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="McM-VY-xcM"/>
                     <connections>
+                        <outlet property="email" destination="nCc-uS-Jaj" id="Uua-A2-PWa"/>
+                        <outlet property="password" destination="T67-pf-KWb" id="Psh-uG-diw"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="loginToRegisterSegue" id="k6b-px-CUf"/>
                     </connections>
                 </viewController>
