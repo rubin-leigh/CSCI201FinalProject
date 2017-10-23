@@ -104,6 +104,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="Gv6-MP-chu"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Student"/>
                                 <connections>
                                     <action selector="studentButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fbc-Qb-Ipw"/>
@@ -114,6 +115,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="S65-Kw-SbW"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Club"/>
                                 <connections>
                                     <action selector="clubButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjw-3M-XP5"/>
@@ -260,7 +262,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="xO9-VX-rep"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="Continue as guest"/>
                                 <connections>
                                     <action selector="continueAsGuestPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSK-xh-gEK"/>
@@ -271,7 +273,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="EMB-GD-sPg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="Forgot password?"/>
                                 <connections>
                                     <action selector="continueAsGuestPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTm-2e-eCB"/>

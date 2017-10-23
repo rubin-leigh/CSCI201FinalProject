@@ -8,6 +8,42 @@
 
 import UIKit
 
+public struct TestEvent {
+    let type: String
+    let title: String
+    let date: Date
+    let time: Time
+    let location: String
+    let image: String
+    let contact: String
+    let host: String
+    let description: String
+
+    public init(event: [String:AnyObject]) {
+        type = event["type"] as! String
+        title = event["title"] as! String
+        date = event["date"] as! Date
+        time = event["time"] as! Time
+        location = event["location"] as! String
+        image = event["image"] as! String
+        contact = event["contact"] as! String
+        host = event["host"] as! String
+        description = event["description"] as! String
+    }
+}
+
+public struct Date {
+    
+}
+
+public struct Time {
+    
+}
+
+public struct Participant {
+    
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +52,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        let apiEndpoint: String = "http://localhost:8080/finalProject/test?username=leighrub&location=Los%20Angeles"
+//        guard let url = URL(string: apiEndpoint) else {
+//            print("Error: cannot create URL")
+//            return false
+//        }
+//        let urlRequest = URLRequest(url: url)
+//
+//        let session = URLSession.shared
+//
+//        let task = session.dataTask(with: urlRequest) {
+//            (data, response, error) in
+//            // check for any errors
+//            guard error == nil else {
+//                print("error calling GET on /todos/1")
+//                print(error!)
+//                return
+//            }
+//            // make sure we got data
+//            guard let responseData = data else {
+//                print("Error: did not receive data")
+//                return
+//            }
+//            // parse the result as JSON, since that's what the API provides
+//            do {
+//                guard let dict = try JSONSerialization.jsonObject(with: responseData, options: [])
+//                    as? [String: Any] else {
+//                        print("error trying to convert data to JSON")
+//                        return
+//                }
+//                // now we have the todo
+//                // let's just print it to prove we can access it
+//
+//                // the todo object is a dictionary
+//                // so we just access the title using the "title" key
+//                // so check for a title and print it if we have one
+//            } catch  {
+//                print("error trying to convert data to JSON")
+//                return
+//            }
+//        }
+//        task.resume()
+        
         return true
     }
 
