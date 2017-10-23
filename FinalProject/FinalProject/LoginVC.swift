@@ -42,6 +42,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
+    @IBAction func loginPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func forgotPasswordPressed(_ sender: Any) {
+        
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false

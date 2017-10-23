@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 public struct TestEvent {
     let type: String
@@ -93,7 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            }
 //        }
 //        task.resume()
-        
+        FirebaseApp.configure()
         return true
     }
 

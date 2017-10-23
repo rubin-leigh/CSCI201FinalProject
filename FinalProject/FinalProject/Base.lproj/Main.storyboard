@@ -107,7 +107,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Student"/>
                                 <connections>
-                                    <action selector="studentButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fbc-Qb-Ipw"/>
+                                    <action selector="studentButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0tf-VJ-il9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7v-aF-IKa">
@@ -118,7 +118,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Club"/>
                                 <connections>
-                                    <action selector="clubButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjw-3M-XP5"/>
+                                    <action selector="clubButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ly3-7W-nBy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSA-lt-sr0">
@@ -129,7 +129,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVk-9A-Gl5"/>
+                                    <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWT-LR-8zj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -169,11 +169,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="clubButton" destination="w7v-aF-IKa" id="VuW-vC-tNW"/>
-                        <outlet property="confirmPassword" destination="0zw-yR-MAI" id="GDI-ep-YXI"/>
-                        <outlet property="email" destination="1MD-3t-YW7" id="Wus-fN-Z95"/>
-                        <outlet property="password" destination="SRV-xF-hvj" id="YNb-X8-03s"/>
-                        <outlet property="studentButton" destination="0xK-d5-8Li" id="FHk-dF-6Rl"/>
+                        <outlet property="clubButton" destination="w7v-aF-IKa" id="9um-AU-Anl"/>
+                        <outlet property="confirmPassword" destination="0zw-yR-MAI" id="VAE-i9-5f5"/>
+                        <outlet property="email" destination="1MD-3t-YW7" id="yVP-hO-ZuE"/>
+                        <outlet property="password" destination="SRV-xF-hvj" id="z2J-gL-EfK"/>
+                        <outlet property="studentButton" destination="0xK-d5-8Li" id="Rxx-eT-7HO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -254,7 +254,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAY-6f-JSN"/>
+                                    <action selector="loginPressed:" destination="Mj0-F5-Dee" eventType="touchUpInside" id="e65-6x-aa1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFh-XS-frD">
@@ -264,9 +264,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="Continue as guest"/>
-                                <connections>
-                                    <action selector="continueAsGuestPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSK-xh-gEK"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhB-Nd-siV">
                                 <rect key="frame" x="16" y="350" width="382" height="30"/>
@@ -276,7 +273,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="Forgot password?"/>
                                 <connections>
-                                    <action selector="continueAsGuestPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTm-2e-eCB"/>
+                                    <action selector="forgotPasswordPressed:" destination="Mj0-F5-Dee" eventType="touchUpInside" id="pXK-fm-qYy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo3-yc-DxC">
@@ -287,8 +284,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Create an Account"/>
                                 <connections>
-                                    <action selector="createAnAccount:" destination="Mj0-F5-Dee" eventType="touchUpInside" id="gNb-Oh-QdI"/>
-                                    <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kex-wh-pbZ"/>
+                                    <action selector="createAnAccount:" destination="Mj0-F5-Dee" eventType="touchUpInside" id="NOX-yB-6Tl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -327,8 +323,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="McM-VY-xcM"/>
                     <connections>
-                        <outlet property="email" destination="nCc-uS-Jaj" id="Uua-A2-PWa"/>
-                        <outlet property="password" destination="T67-pf-KWb" id="Psh-uG-diw"/>
+                        <outlet property="email" destination="nCc-uS-Jaj" id="dPh-yK-XFC"/>
+                        <outlet property="password" destination="T67-pf-KWb" id="i6g-7H-MBO"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="loginToRegisterSegue" id="k6b-px-CUf"/>
                     </connections>
                 </viewController>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterVC: UIViewController, UITextFieldDelegate {
     let gradientLayer = CAGradientLayer()
@@ -59,7 +60,7 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
             self.serveAlert(title: "Password Mismatch", message: "Passwords do not match, please try again")
         }
         else {
-            return
+            createUserActual()
         }
         
     }
@@ -82,8 +83,24 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    func createUserActual() {
+            self.view.isUserInteractionEnabled = false
+            Auth.auth().createUser(withEmail: self.email.text!, password: self.password.text!, completion: { user, error in
+                if error == nil {
+                    Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!, completion: { user, error in
+                        if error == nil {
+                            self.view.isUserInteractionEnabled = true
+                            //self.performSegue(withIdentifier: "gettingStartedSegue", sender: nil)
+                        }
+                    })
+                } else {
+                    self.view.isUserInteractionEnabled = true
+                }
+            })
+        }
+    }
 
-}
+
 
 extension CAGradientLayer {
     func setColorUSC() {
