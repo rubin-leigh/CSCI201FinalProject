@@ -9,19 +9,19 @@ public class Events {
 	private Time time;
 	private String location;
 	private String img;
-	private String contact;
+	private String phone;
 	private String host;
 	private String description;
 	private Integer participantsCap;
 	private ArrayList<Participants> participants;
-	public Events(String type, String title, Date date,Time time, String location, String img, String contact, String host, String description, Integer participantsCap,Participants participants) {
+	public Events(String type, String title, Date date,Time time, String location, String img, String phone, String host, String description, Integer participantsCap,Participants participants) {
 		this.type = type;
 		this.title = title;
 		this.date = date;
 		this.time = time;
 		this.location = location;
 		this.img = img;
-		this.contact = contact;
+		this.phone = phone;
 		this.host = host;
 		this.description = description;
 		this.participantsCap = participantsCap;
@@ -63,11 +63,11 @@ public class Events {
 	public void setImg(String img) {
 		this.img = img;
 	}
-	public String getContact() {
-		return contact;
+	public String getPhone() {
+		return phone;
 	}
-	public void setContact(String contact) {
-		this.contact = contact;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 	public String getHost() {
 		return host;
