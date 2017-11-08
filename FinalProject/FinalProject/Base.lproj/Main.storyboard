@@ -275,7 +275,6 @@
         <!--FilterVC-->
         <scene sceneID="dW4-eP-eze">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MHU-sF-Mh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="IgS-Cr-oWJ" customClass="FilterVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I0i-Hr-W2M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -323,6 +322,7 @@
                         <outlet property="filterTable" destination="rrW-aw-WdM" id="cwI-EU-txA"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHU-sF-Mh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3036.2318840579715" y="104.34782608695653"/>
         </scene>
