@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginVC: UIViewController, UITextFieldDelegate {
     let gradientLayer = CAGradientLayer()
@@ -16,6 +17,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //self.tabBarController?.tabBar.isHidden = true
+        
         self.gradientLayer.frame = self.view.bounds
         self.gradientLayer.setColorUSC()
         
@@ -24,6 +27,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.email.delegate = self
         self.password.delegate = self
         self.hideKeyboardWhenBackgroundTapped()
+        
+        self.navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
     }
 
@@ -43,11 +48,34 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginPressed(_ sender: Any) {
-        
+        self.login()
     }
     
     @IBAction func forgotPasswordPressed(_ sender: Any) {
+        //1. Create the alert controller.
+        let alert = UIAlertController(title: "Forgot password", message: "Enter your email address", preferredStyle: .alert)
         
+        //2. Add the text field. You can configure it however you need.
+        alert.addTextField { (textField) in
+            textField.text = "Email"
+        }
+        
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "Send", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            print((textField?.text)!)
+            Auth.auth().sendPasswordReset(withEmail: (textField?.text)!) { (error) in
+                if error != nil {
+                    self.serveAlert(title: "Error", message: (error?.localizedDescription)!)
+                }
+                else {
+                    self.serveAlert(title: "Success", message: "Password reset email sent")
+                }
+            }
+        }))
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -62,6 +90,29 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
+    func login() {
+        let passwordActual = self.password.text
+        
+        if passwordActual != "" {
+            self.view.isUserInteractionEnabled = false
+            Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!, completion: { user, error in
+                // ideally should log the error message here
+                self.view.isUserInteractionEnabled = true
+                if error == nil {
+                    if (Auth.auth().currentUser?.isEmailVerified)! {
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                    else {
+                        self.performSegue(withIdentifier: "loginToNotVerifiedVC", sender: nil)
+                    }
+                }else {
+                    self.serveAlert(title: "Error Logging In", message: error?.localizedDescription as String!)
+                }
+            })
+        } else {
+            self.serveAlert(title: "Password Needed", message: "Password is a required field")
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -73,4 +124,15 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     */
 
+}
+
+
+extension UIViewController {
+    func serveAlert(title:String, message:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
 }

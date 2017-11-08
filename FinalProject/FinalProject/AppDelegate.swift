@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import GoogleMaps
+import GooglePlaces
 
 public struct TestEvent {
     let type: String
@@ -95,6 +97,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
 //        task.resume()
         FirebaseApp.configure()
+        GMSServices.provideAPIKey("AIzaSyD_ZR72vsXNeGiIHs3mbGANax3z7bJ7VI4")
+        GMSPlacesClient.provideAPIKey("AIzaSyAMGwXVpyUC-uEtl36qOL4xRQvtJE8pFrE")
         return true
     }
 
@@ -119,6 +123,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
 
 
 }

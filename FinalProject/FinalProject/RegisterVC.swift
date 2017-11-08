@@ -22,6 +22,8 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        //self.tabBarController?.tabBar.isHidden = true
+        
         self.gradientLayer.frame = self.view.bounds
         self.gradientLayer.setColorUSC()
         
@@ -60,17 +62,9 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
             self.serveAlert(title: "Password Mismatch", message: "Passwords do not match, please try again")
         }
         else {
-            createUserActual()
+            self.createUserActual()
         }
         
-    }
-
-    func serveAlert(title:String, message:String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        
-        self.present(alert, animated: true, completion: nil)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -90,7 +84,12 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
                     Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!, completion: { user, error in
                         if error == nil {
                             self.view.isUserInteractionEnabled = true
-                            //self.performSegue(withIdentifier: "gettingStartedSegue", sender: nil)
+                            self.performSegue(withIdentifier: "registerToNotVerifiedSegue", sender: nil)
+                            Auth.auth().currentUser?.updateEmail(to: self.email.text!) { (error) in
+                                Auth.auth().currentUser?.sendEmailVerification() { (error) in
+                                    
+                                }
+                            }
                         }
                     })
                 } else {
