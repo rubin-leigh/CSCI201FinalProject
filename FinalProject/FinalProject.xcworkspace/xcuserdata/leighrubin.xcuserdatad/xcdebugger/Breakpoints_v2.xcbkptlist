@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinalProject/MapVC.swift"
-            timestampString = "531821460.273287"
+            timestampString = "532842174.990084"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,59 +26,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinalProject/MapVC.swift"
-            timestampString = "531821460.273816"
+            timestampString = "532842174.990244"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FinalProject/MapVC.swift"
-            timestampString = "531821460.274197"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "checkIfUserLoggedIn()"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "checkIfUserLoggedIn(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.Auth, Swift.Optional&lt;__ObjC.User&gt;) -&gt; () in FinalProject.MapVC.checkIfUserLoggedIn() -&gt; ()"
+                  symbolName = "closure #1 (__ObjC.Auth, Swift.Optional&lt;__ObjC.User&gt;) -&gt; () in FinalProject.MapVC.checkIfUserLoggedIn(completion: () -&gt; ()) -&gt; ()"
                   moduleName = "FinalProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/leighrubin/Desktop/CSCI201FinalProject/FinalProject/FinalProject/MapVC.swift"
-                  timestampString = "531813649.866734"
+                  timestampString = "531867596.026235"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "712">
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "416">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in closure #1 (__ObjC.Auth, Swift.Optional&lt;__ObjC.User&gt;) -&gt; () in FinalProject.MapVC.checkIfUserLoggedIn() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in closure #1 (__ObjC.Auth, Swift.Optional&lt;__ObjC.User&gt;) -&gt; () in FinalProject.MapVC.checkIfUserLoggedIn(completion: () -&gt; ()) -&gt; ()"
                   moduleName = "FinalProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/leighrubin/Desktop/CSCI201FinalProject/FinalProject/FinalProject/MapVC.swift"
-                  timestampString = "531813649.86931"
+                  timestampString = "531867596.029026"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "23">
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -90,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinalProject/MapVC.swift"
-            timestampString = "531821460.274554"
+            timestampString = "532842174.990306"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "checkIfUserLoggedIn()"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "checkIfUserLoggedIn(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinalProject/MapVC.swift"
-            timestampString = "531821460.274948"
+            timestampString = "532842174.990376"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "checkIfUserLoggedIn()"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "checkIfUserLoggedIn(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,13 +106,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinalProject/MapVC.swift"
-            timestampString = "531821460.280166"
+            timestampString = "532842174.99043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "MapVC"
-            landmarkType = "3">
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "checkIfUserLoggedIn(completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinalProject/FilterVC.swift"
-            timestampString = "531821460.280695"
+            timestampString = "532841777.228845"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -154,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinalProject/FilterVC.swift"
-            timestampString = "531821460.280775"
+            timestampString = "532841777.229247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -169,46 +153,94 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FinalProject/MapVC.swift"
-            timestampString = "531821460.280827"
+            filePath = "FinalProject/User.swift"
+            timestampString = "532842174.99064"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "coorToAddress(coordinate:completion:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loadUserInfo(userID:completionHandler:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FinalProject.MapVC.coorToAddress(coordinate: __C.CLLocationCoordinate2D) -&gt; Swift.String"
-                  moduleName = "FinalProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/leighrubin/Desktop/CSCI201FinalProject/FinalProject/FinalProject/MapVC.swift"
-                  timestampString = "531820470.489316"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "198">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__ObjC.CLPlacemark&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FinalProject.MapVC.coorToAddress(coordinate: __C.CLLocationCoordinate2D) -&gt; Swift.String"
-                  moduleName = "FinalProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/leighrubin/Desktop/CSCI201FinalProject/FinalProject/FinalProject/MapVC.swift"
-                  timestampString = "531820470.492722"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "21">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FinalProject/MapVC.swift"
+            timestampString = "532842174.990722"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FinalProject/NewEventVC.swift"
+            timestampString = "532841182.710933"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "createEvent(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FinalProject/NewEventVC.swift"
+            timestampString = "532841182.711042"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "createEvent(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FinalProject/User.swift"
+            timestampString = "532842174.99091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "loadUserInfo(userID:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FinalProject/FilterVC.swift"
+            timestampString = "532841777.22985"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "applyFilters(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
