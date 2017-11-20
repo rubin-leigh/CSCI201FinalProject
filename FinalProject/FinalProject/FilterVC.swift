@@ -63,7 +63,7 @@ class FilterVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     @IBAction func applyFilters(_ sender: Any) {
-        
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
     override func didReceiveMemoryWarning() {

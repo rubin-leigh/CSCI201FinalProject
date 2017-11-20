@@ -63,6 +63,7 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
         }
         else {
             self.createUserActual()
+            self.dismiss(animated: true, completion: nil)
         }
         
     }
@@ -87,7 +88,6 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
                             self.performSegue(withIdentifier: "registerToNotVerifiedSegue", sender: nil)
                             Auth.auth().currentUser?.updateEmail(to: self.email.text!) { (error) in
                                 Auth.auth().currentUser?.sendEmailVerification() { (error) in
-                                    
                                 }
                             }
                         }
