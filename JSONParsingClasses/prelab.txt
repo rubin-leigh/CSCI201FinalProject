@@ -1,0 +1,14 @@
+ How many signals (non PWR or GND) are exchanged between the digital
+controller and the PING sensor?
+ What voltage levels does it expect for logic 0 and logic 1?
+ How long a pulse must we send to initiate a sensing?
+ How long do we need to wait before expecting a return signal?
+ What range of time will the return
+pulse last?
+ How long do we need to wait
+before starting our next sensing?
+
+1. 
+2. 
+3. Input trigger: positive TTL pulse, 2 µs min, 5 µs typ
+4. Echo pulse: positive TTL pulse, 115 µs minimum to 18.5 ms maximum. 
